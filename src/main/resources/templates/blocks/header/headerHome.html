@@ -1,24 +1,15 @@
 <div th:fragment="header">
-    <nav class="navbar navbar-expand-md navbar-green bg-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
-            <a href="#" class="navbar-brad"><img src="img/logo/logo.svg"></a>
+            <a href="/" class="navbar-brad"><img src="img/logo/logo.svg"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-
                     <li>
                         <div class="dropdown">
-                            <a class="btn btn-secondary" type="button" href="/" >
-                                Home
-                            </a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="dropdown">
-                            <a class="btn btn-secondary" type="button" href="/registration" >
+                            <a class="btn btn-outline-success" type="button" href="/registration" >
                                 Registration
                             </a>
                         </div>
@@ -33,6 +24,16 @@
                     </li>
                 </ul>
             </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <li><a class="btn btn-light" href="#">что вы получаете</a></li>
+            <li><a class="btn btn-light" href="#">направления</a></li>
+            <li><a class="btn btn-light" href="#">обучение</a></li>
+            <li><a class="btn btn-light" href="#">трудоустройство</a></li>
+            <li><a class="btn btn-light" href="#">FAQ</a></li>
+            <li><a class="btn btn-light" href="#">contacts</a></li>
         </div>
     </nav>
 </div>
