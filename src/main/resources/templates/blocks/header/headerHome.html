@@ -1,10 +1,7 @@
 <div th:fragment="header">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-green bg-dark sticky-top">
         <div class="container-fluid">
             <a href="/" class="navbar-brad"><img src="img/logo/logo.svg"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li>
@@ -27,13 +24,20 @@
         </div>
     </nav>
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsiv">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarResponsiv">
+                <ul class="navbar-nav ml-auto">
             <li><a class="btn btn-light" href="#">что вы получаете</a></li>
             <li><a class="btn btn-light" href="#">направления</a></li>
             <li><a class="btn btn-light" href="#">обучение</a></li>
             <li><a class="btn btn-light" href="#">трудоустройство</a></li>
             <li><a class="btn btn-light" href="#">FAQ</a></li>
             <li><a class="btn btn-light" href="#">contacts</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 </div>
