@@ -1,0 +1,38 @@
+<div th:fragment="header">
+    <nav class="navbar navbar-expand-md navbar-green bg-dark sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brad"><img src="img/logo/logo.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+
+                    <li>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary" type="button" href="/" >
+                                Home
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary" type="button" href="/registration" >
+                                Registration
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary" href="/login" type="button"  >
+                                Login
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

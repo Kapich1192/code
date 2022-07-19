@@ -1,4 +1,4 @@
-package com.code.controllers.homeController;
+package com.code.controllers.login.homeController;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,6 +9,6 @@ public class HomeController {
     @GetMapping("/")
     public String getHome(Model model) {
 
-        return "pages/home";
+        return "pages/login/home";
     }
 }

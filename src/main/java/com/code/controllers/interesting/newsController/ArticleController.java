@@ -1,4 +1,4 @@
-package com.code.controllers.articleController;
+package com.code.controllers.interesting.newsController;
 
 import com.code.models.article.Article;
 import com.code.repo.article.ArticleRepository;
