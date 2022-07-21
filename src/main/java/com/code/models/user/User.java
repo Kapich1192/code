@@ -1,9 +1,14 @@
 package com.code.models.user;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "usr")
 public class User {
     /*fields*/
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     private String name;
     private String lastname;
     private String login;
