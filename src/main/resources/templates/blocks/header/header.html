@@ -58,7 +58,8 @@
 
                     <li>
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="interest" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="interest" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
                                 Interesting
                             </button>
                             <div class="dropdown-menu" aria-labelledby="interest">
@@ -68,13 +69,20 @@
                             </div>
                         </div>
                     </li>
-
                     <li>
                         <div class="dropdown">
-                            <button class="btn btn-secondary" type="button" href="#"  aria-haspopup="true" aria-expanded="false">
-                                Login
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="interest" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false" th:inline="text" >
+                                [[${#httpServletRequest.remoteUser}]]
                             </button>
-                        </div>
+                            <div class="dropdown-menu" aria-labelledby="interest">
+                                <a class="dropdown-item" href="#">Messages</a>
+                                <a class="dropdown-item" href="#">My team</a>
+                                    <form  class="dropdown-item" th:action="@{/logout}" method="post">
+                                        <input type="submit" value="Sign Out"/>
+                                    </form>
+                            </div>
+                    </div>
                     </li>
                 </ul>
             </div>
