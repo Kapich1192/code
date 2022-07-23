@@ -14,37 +14,23 @@
 <main class="form-signin w-100 m-auto">
     <br><br>
     <div class="container">
-    <form>
+
         <img class="mb-4" src="img/logo/logo.svg" alt="" width="72" height="57">
         <h1 class="h3 mb-3 fw-normal">Registration</h1>
         <p>Registration is not available at the moment, the service is in operation.</p>
-        <div class="form-floating">
-            <input type="name" class="form-control" id="nameInput" placeholder="Your name">
-            <label for="nameInput">Your name</label>
+
+        <div class="container-fluid">
+            <div class="row text-center">
+                <form th:action="@{/registration}" method="post">
+                    <div><label> User Name : <input type="text" name="username"/> </label></div>
+                    <div><label> Password: <input type="password" name="password"/> </label></div>
+                    <div><input type="submit" value="registration"/></div>
+                </form>
+            </div>
         </div>
 
-        <div class="form-floating">
-            <input type="name" class="form-control" id="lastnameInput" placeholder="Your lastname">
-            <label for="lastnameInput">Your lastname</label>
-        </div>
-
-        <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
-        </div>
-        <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-        </div>
-
-        <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
-        </div>
-        <button class="w-100 btn btn-lg btn-secondary" type="submit">Registration</button>
         <p class="mt-5 mb-3 text-muted">©2022</p>
-    </form>
+
     </div>
 </main>
 
