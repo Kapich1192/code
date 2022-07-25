@@ -1,4 +1,4 @@
-package com.code.controllers.interesting.newsController;
+package com.code.controllers.account.articles;
 
 import com.code.models.article.Article;
 import com.code.repo.article.ArticleRepository;
@@ -8,21 +8,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class ArticleController {
+public class ArticlesController {
     @Autowired
     private ArticleRepository articleRepository;
-    /*GET*/
-    @GetMapping("/news")
-    public String getNews(Model model) {
+
+    @GetMapping("/add_articles")
+    public String getAddArticles(Model model) {
         Iterable<Article> articles = articleRepository.findAll();
         model.addAttribute("articles",articles);
-        return "pages/news/news";
+        return "pages/admin/add_news";
     }
-
-    @GetMapping("/news/")
-    public String getArticle(Model model) {
-        return "news/article";
-    }
-
-    /*POST*/
 }
