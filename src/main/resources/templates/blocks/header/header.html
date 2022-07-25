@@ -1,31 +1,28 @@
 <div th:fragment="header">
     <nav class="navbar navbar-expand-md navbar-green bg-dark sticky-top">
         <div class="container-fluid">
-            <a href="#" class="navbar-brad"><img src="img/logo/logo.svg"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
+            <a href="/dashboard" class="navbar-brad"><img src="img/logo/logo.svg"></a>
+            <button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon " ></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-
                     <li>
                         <div class="dropdown">
-                            <button class="btn btn-secondary" type="button" href="#"  aria-haspopup="true" aria-expanded="false">
+                            <a href="/dashboard"><button class="btn btn-secondary" type="button"   aria-haspopup="true" aria-expanded="false">
                                 Dashboard
-                            </button>
+                            </button></a>
                         </div>
                     </li>
-
                     <li>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="projectsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Projects
                         </button>
                         <div class="dropdown-menu" aria-labelledby="projectsMenu">
-                            <a class="dropdown-item" href="#">Projects Map</a>
-                            <a class="dropdown-item" href="#">Current Project</a>
-                            <a class="dropdown-item" href="#">Exam</a>
-                            <a class="dropdown-item" href="#">Team</a>
+                            <a class="dropdown-item" href="/project_map">Projects Map</a>
+                            <a class="dropdown-item" href="/current_project">Current Project</a>
+                            <a class="dropdown-item" href="/exam">Exam</a>
                         </div>
                     </div>
                     </li>
@@ -36,9 +33,10 @@
                                 Learning
                             </button>
                             <div class="dropdown-menu" aria-labelledby="learnMenu">
-                                <a class="dropdown-item" href="#">Learn Map</a>
-                                <a class="dropdown-item" href="#">Learn action</a>
-                                <a class="dropdown-item" href="#">Peer to Peer</a>
+                                <a class="dropdown-item" href="/learn_map">Learn Map</a>
+                                <a class="dropdown-item" href="/learn_action">Learn action</a>
+                                <a class="dropdown-item" href="/peer_to_peer">Peer to Peer</a>
+                                <a class="dropdown-item" href="/problems">Problems</a>
                             </div>
                         </div>
                     </li>
@@ -49,35 +47,44 @@
                                 Progress
                             </button>
                             <div class="dropdown-menu" aria-labelledby="progressMenu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="/tasks_progress">Tasks</a>
+                                <a class="dropdown-item" href="/learn_progress">Learn</a>
+                                <a class="dropdown-item" href="/projects_progress">Projects</a>
+                                <a class="dropdown-item" href="/tribe_tournament">Tribe tournament</a>
                             </div>
                         </div>
                     </li>
 
                     <li>
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="interest" data-toggle="dropdown"
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="interesting" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
                                 Interesting
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="interest">
-                                <a class="dropdown-item" href="#">News</a>
-                                <a class="dropdown-item" href="#">Posts</a>
-                                <a class="dropdown-item" href="#">Hackathons</a>
+                            <div class="dropdown-menu" aria-labelledby="interesting">
+                                <a class="dropdown-item" href="/news">News</a>
+                                <a class="dropdown-item" href="/posts">Posts</a>
+                                <a class="dropdown-item" href="/hack">Hackathons</a>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="interest" data-toggle="dropdown"
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="account" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false" th:inline="text" >
                                 [[${#httpServletRequest.remoteUser}]]
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="interest">
-                                <a class="dropdown-item" href="#">Messages</a>
-                                <a class="dropdown-item" href="#">My team</a>
+                            <div class="dropdown-menu" aria-labelledby="account">
+                                <a class="dropdown-item" href="/mail">mail</a>
+                                <a class="dropdown-item" href="/messages">messenger</a>
+                                <a class="dropdown-item" href="/my_music">my music</a>
+                                <a class="dropdown-item" href="/my_chapter">my chapter</a>
+                                <a class="dropdown-item" href="/my_team">my team</a>
+                                <a class="dropdown-item" href="/tape">tape</a>
+                                <a class="dropdown-item" href="/my_video">my video</a>
+                                <a class="dropdown-item" href="/scheduler">scheduler</a>
+                                <a class="dropdown-item" href="/setting">setting</a>
+                                <a class="dropdown-item" href="/guild">guild</a>
                                     <form  class="dropdown-item" th:action="@{/logout}" method="post">
                                         <input type="submit" value="Sign Out"/>
                                     </form>

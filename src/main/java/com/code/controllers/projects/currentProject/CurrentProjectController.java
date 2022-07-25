@@ -1,13 +1,13 @@
-package com.code.controllers.projects.examController;
+package com.code.controllers.projects.currentProject;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class ExamController {
-    @GetMapping("/exam")
-    public String getExam(Model model) {
+public class CurrentProjectController {
+    @GetMapping("/current_project")
+    public String getCurrentProject(Model model) {
         return "pages/system/pageDevelopment";
     }
 }

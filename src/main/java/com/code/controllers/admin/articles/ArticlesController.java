@@ -1,4 +1,4 @@
-package com.code.controllers.account.articles;
+package com.code.controllers.admin.articles;
 
 import com.code.models.article.Article;
 import com.code.repo.article.ArticleRepository;
