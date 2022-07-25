@@ -1,22 +1,21 @@
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-</style>
+
 
 body, html {
     width: 100%;
     height: 100%;
-    font-family: 'Poppins' , sans-serif;
+    font-family: Poppins , sans-serif;
     color: #222;
 }
 
 .navbar-brad img { width: 100px }
 
 .navbar-nav li {
-    padding-right: 20px;
-    padding-width: 20px;
-    padding-height: 20px;
+    padding: 20px 0;
 }
-
+.navbar-nav {
+    padding: 20px 0;
+}
 .nav-link {font-size: 1.1em !important}
 
 .carousel-inner {
@@ -33,7 +32,7 @@ body, html {
     }
 }
 .carousel-caption {
-    position: absolut;
+    position: absolute;
     top: 50%;
     transform: translateY(-80%);
     text-shadow: 1px 1px 10px #000;
@@ -53,3 +52,223 @@ body, html {
 footer {
     color: white;
 }
+/*-------------------info-----------------*/
+.info{
+    position: relative;
+    background: url(../img/info/bg.webp) #161d27;
+    object-fit: contain;
+    padding: 120px 0;
+    z-index: 1;
+}
+.info *{
+    color:#FFF;
+}
+.get_inner{
+    box-sizing: border-box;
+}
+.get_title{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 114.2857142857%;
+    margin: 0 0 48px;
+    color: #fff;
+}
+.get_slider{
+    position: relative;
+    padding: 0 0 65px;
+    overflow: hidden;
+}
+.get_slider__container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    height: 18rem;
+    padding: 0;
+    z-index: 1;
+}
+.get-slider__wrapper{
+    transition-duration: 0ms;
+    transform: translate3d(0px, 0px, 0px);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.swiper-container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    overflow: visible;
+}
+.get_slider__slide{
+    width: 394px;
+    margin-right: 30px;
+}
+.swiper-slide {
+    flex-shrink: 0;
+    width: 50%;
+    height: 100%;
+    padding-right: 2rem;
+    position: relative;
+    transition-property: transform;
+}
+.get-slider__item{
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 1px 0 #c4c6d7;
+    border-radius: 20px;
+    height: 95%;
+}
+.get-item__icon{
+    background-image: url(../img/info/icon-1.svg);
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 16px;
+}
+.get-item__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #861be3;
+    margin: 0 0 16px;
+}
+.get-item__description{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142.8571428571%;
+    color: #516071;
+}
+.get_slider button{
+    outline: none;
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.button__arrow {
+    background: #44eb99;
+    height: 40px;
+    width: 40px;
+}
+.button__arrow .button__arrow-right{
+    padding: 6px;
+    border-right: 2px solid rgba(0, 0, 0,1);
+    border-top: 2px solid rgba(0, 0, 0, 1);
+    transform: translateX(-25%) rotate(45deg);
+}
+.button__arrow .button__arrow-left{
+    padding: 6px;
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
+    border-left: 2px solid rgba(0, 0, 0, 1);
+    transform: translateX(25%) rotate(45deg);
+}
+/*------------------skills----------------*/
+.skills {
+    padding: 96px 0;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.skills__box{
+    padding: 1rem 0;
+}
+.skills__wrapper {
+    position: relative;
+}
+.title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 114.2857142857%;
+    margin: 0 0 48px;
+}
+.skills__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #516071;
+    margin: 0 0 24px;
+}
+.skills__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px 0 0 -8px;
+}
+.skills-tooltip{
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+.skills__item {
+    padding: 16px 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #212121;
+    background-color: #f1f3ff;
+    border-radius: 10px;
+    margin: 8px 0 0 8px;
+}
+.fadeInSlide {
+    animation-name: fadeInSlide;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(1, 0.055, 0.32, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInSlide {
+    0% {
+        transform: translateY(60%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/*--------------principles------------------*/
+.principles{
+    position: relative;
+    background-color: #161d27;
+    padding: 96px 0 80px;
+    z-index: 3;
+}
+.principles__inner{
+    display: flex;
+    margin: 0 -30px;
+    width: 100%;
+}
+.principles-item{
+    flex: 0 1 33.333%;
+    width: 33.333%;
+    padding: 0 30px;
+}
+.principles__title{
+    color: #ffffff;
+}
+.principles-item__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #44eb99;
+    max-width: 310px;
+    margin: 0 0 24px;
+}
+.principles-item__text {
+    font-weight: 500;
+    color: #fff;
+    font-size: 14px;
+    line-height: 142.8571428571%;
+}
+.principles-item__text span{
+    color: #44eb99;
+}
+/*------------step-skills-----------------*/
