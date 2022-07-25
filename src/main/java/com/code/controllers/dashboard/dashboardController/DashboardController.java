@@ -10,9 +10,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class DashboardController {
     @Autowired
     UserRepo userRepo;
-
+/*GET*/
     @GetMapping("/dashboard")
     public String getDashboard(Model model) {
+        model.addAttribute("title", "Dashboard");
+        model.addAttribute("Description", "Your working place");
         return "pages/dashboard/dashboard";
     }
 }
