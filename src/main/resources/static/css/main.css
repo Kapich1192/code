@@ -272,3 +272,196 @@ footer {
     color: #44eb99;
 }
 /*------------step-skills-----------------*/
+.process{
+    padding: 10px 0;
+}
+.process__top{
+    position: relative;
+    display: flex;
+    margin: 0 0 35px;
+}
+.process__bottom{
+    position: relative;
+    display: flex;
+    padding: 0 0 0 76px;
+}
+.process-item {
+    flex: 0 0 330px;
+    padding: 0 0 28px 0;
+    border-radius: 10px;
+}
+.process__inner {
+    margin: 48px -48px;
+}
+.process__top .process-item {
+    position: relative;
+    border: 3px solid #861be3;
+    z-index: 5;
+}
+.process-item__top {
+    border-radius: 0 0 10px 10px;
+    font-size: 10px;
+    line-height: 130%;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 0 13px;
+    color: #fff;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    background-color: #861be3;
+}
+.process-name{
+    display: flex;
+    padding: 24px 24px 0 24px;
+    margin: 0 0 16px;
+    align-items: center;
+}
+.process-item__description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142.8571428571%;
+    color: #161d27;
+    padding: 0 0 0 24px;
+    max-width: 256px;
+}
+.process-name__icon {
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/step-skills/icon-1.svg);
+}
+.process-name__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: #516071;
+    max-width: 185px;
+    margin: 0 0 0 33px;
+}
+
+.process__bottom .process-item:nth-child(1) {
+    order: 3;
+}
+.process__bottom .process-item:nth-child(2) {
+    order: 2;
+}
+.process__bottom .process-item:nth-child(3) {
+    order: 1;
+}
+.process__bottom .process-item {
+    position: relative;
+    margin-left: 30px;
+    border: 3px solid #44eb99;
+}
+.process__top .process-item+.process-item {
+    margin-left: 30px;
+}
+.process__bottom .process-item__top {
+    background-color: #44eb99;
+}
+.process-item__description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142.8571428571%;
+    color: #161d27;
+    padding: 0 0 0 24px;
+    max-width: 256px;
+}
+.process__bottom .process-item__description {
+    max-width: 290px;
+}
+.process__top::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/step-skills/arrow-1.svg);
+    left: -29%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.process__top .process-item+.process-item::before {
+    content: "";
+    position: absolute;
+    width: 11%;
+    height: 4px;
+    background-color: #861be3;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.process__top .process-item+.process-item::before {
+    content: "";
+    position: absolute;
+    width: 11%;
+    height: 4px;
+    background-color: #861be3;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.process__top::after {
+    content: "";
+    position: absolute;
+    width: 194px;
+    height: 312px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/step-skills/arrow-4.svg);
+    left: 84.4%;
+    top: 50%;
+}
+
+.process__bottom .process-item:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    width: 11%;
+    height: 4px;
+    background-color: #44eb99;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.process__bottom .process-item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 11%;
+    height: 4px;
+    background-color: #44eb99;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.process__btn-box {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+.process__btn{
+    cursor: pointer;
+    font-weight: 700;
+    display: inline-block;
+    height: 54px;
+    font-size: 18px;
+    line-height: 128.5714285714%;
+    color: #212121;
+    padding: 16px 58px;
+    background-color: #44eb99;
+    border-radius: 10px;
+    transition: background-color .3s linear,color .3s linear;
+}
+.process__btn:hover{
+    background: #1b5739;
+    color: #FFFFFF;
+}
+.container{
+    padding: 0;
+}
