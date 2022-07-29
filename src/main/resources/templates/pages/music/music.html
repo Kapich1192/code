@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+        <title th:text="${title}"></title>
         <!-- CSS only -->
         <div th:insert="blocks/sys/css :: css"></div>
 </head>
@@ -14,7 +14,6 @@
             <!--Fragment Social menu-->
             <div th:insert="blocks/header/header :: menu"></div>
         </div>
-    <div th:insert="blocks/admin/panel :: panel"></div>
     <!--================================ Content  ==================================-->
     <div class="bg-light">
         <div class="container-fluid border" style="padding: 50px 50px 0 100px">
